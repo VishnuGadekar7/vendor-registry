@@ -1,0 +1,29 @@
+{
+  "name": "energize-vendor-form",
+  "version": "1.0.0",
+  "description": "Vendor Registration Form for Energize Pharmaceuticals (P) Limited — collects vendor details, generates PDF, and emails to accounts team",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "puppeteer": "^23.11.1",
+    "resend": "^4.1.2"
+  },
+  "keywords": [
+    "vendor",
+    "registration",
+    "energize",
+    "pharmaceuticals",
+    "pdf"
+  ],
+  "license": "ISC"
+}

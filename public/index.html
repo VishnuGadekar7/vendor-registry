@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Registration — Energize Pharmaceuticals (P) Limited</title>
+  <meta name="description"
+    content="Register as a vendor with Energize Pharmaceuticals (P) Limited. Submit your business details, tax information, and bank details online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1a6b4a;
+      --primary-dark: #145538;
+      --primary-light: #e8f5ee;
+      --primary-glow: rgba(26, 107, 74, 0.15);
+      --accent: #2a8f66;
+      --surface: #ffffff;
+      --surface-alt: #f8fafb;
+      --bg: #f0f4f3;
+      --text: #1a1a2e;
+      --text-secondary: #555770;
+      --text-muted: #8a8da0;
+      --border: #d8dde6;
+      --border-light: #e8ecf1;
+      --error: #dc3545;
+      --error-bg: #fef2f2;
+      --error-border: #fca5a5;
+      --success: #16a34a;
+      --success-bg: #f0fdf4;
+      --warning: #f59e0b;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --radius-xs: 6px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.05);
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ──── HEADER ──── */
+    .site-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, #0f3d28 100%);
+      color: #fff;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .site-header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 600px 300px at 20% 50%, rgba(255, 255, 255, 0.07), transparent),
+        radial-gradient(ellipse 400px 400px at 80% 30%, rgba(42, 143, 102, 0.2), transparent);
+      pointer-events: none;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 24px 28px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .company-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .company-logo svg {
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+    }
+
+    .company-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .company-subtitle {
+      font-size: 13px;
+      opacity: 0.75;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+
+    .company-contacts {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 12px;
+      font-size: 12px;
+      opacity: 0.7;
+      flex-wrap: wrap;
+    }
+
+    .company-contacts span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .form-title-bar {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(6px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 14px 24px;
+      text-align: center;
+    }
+
+    .form-title-bar h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    /* ──── PROGRESS ──── */
+    .progress-container {
+      max-width: 700px;
+      margin: -20px auto 0;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .progress-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 24px 28px 20px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-light);
+    }
+
+    .progress-steps {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .progress-steps::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 36px;
+      right: 36px;
+      height: 3px;
+      background: var(--border-light);
+      border-radius: 2px;
+      z-index: 0;
+    }
+
+    .progress-fill {
+      position: absolute;
+      top: 18px;
+      left: 36px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 2px;
+      z-index: 1;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .step-indicator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      cursor: default;
+      flex: 1;
+    }
+
+    .step-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 2.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--text-muted);
+      transition: all var(--transition);
+      position: relative;
+    }
+
+    .step-indicator.active .step-circle {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 0 0 5px var(--primary-glow);
+    }
+
+    .step-indicator.completed .step-circle {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .step-label {
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-align: center;
+      transition: color var(--transition);
+      white-space: nowrap;
+    }
+
+    .step-indicator.active .step-label {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .step-indicator.completed .step-label {
+      color: var(--primary);
+    }
+
+    /* ──── FORM CONTAINER ──── */
+    .form-wrapper {
+      max-width: 700px;
+      margin: 24px auto 40px;
+      padding: 0 24px;
+    }
+
+    .form-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+    }
+
+    .step-section {
+      display: none;
+      padding: 32px 32px 24px;
+      animation: fadeSlideIn 0.35s ease-out;
+    }
+
+    .step-section.active {
+      display: block;
+    }
+
+    @keyframes fadeSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .step-header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .step-header h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .step-header p {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+
+    /* ──── FORM FIELDS ──── */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .form-group label .required {
+      color: var(--error);
+      font-weight: 700;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      background: var(--surface-alt);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-xs);
+      outline: none;
+      transition: all var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 3.5px var(--primary-glow);
+    }
+
+    .form-group input.error,
+    .form-group select.error,
+    .form-group textarea.error {
+      border-color: var(--error);
+      background: var(--error-bg);
+      box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+
+    .hint-text {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    .field-error {
+      font-size: 11.5px;
+      color: var(--error);
+      margin-top: 4px;
+      display: none;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .field-error.visible {
+      display: flex;
+    }
+
+    /* ──── POLICY CARDS ──── */
+    .policy-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: border-color var(--transition);
+    }
+
+    .policy-card:hover {
+      border-color: var(--primary);
+    }
+
+    .policy-card h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .policy-card h4::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .policy-card p,
+    .policy-card ol {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    .policy-card ol {
+      padding-left: 20px;
+    }
+
+    .policy-card ol li {
+      margin-bottom: 6px;
+    }
+
+    .policy-card .note {
+      font-size: 12px;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    .declaration-box {
+      background: var(--primary-light);
+      border: 1px solid rgba(26, 107, 74, 0.2);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .declaration-box h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .declaration-box p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    /* ──── CHECKBOX ──── */
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-top: 20px;
+      padding: 16px;
+      background: var(--surface-alt);
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .checkbox-group:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .checkbox-group.error {
+      border-color: var(--error);
+      background: var(--error-bg);
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      accent-color: var(--primary);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-group label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    /* ──── BUTTONS ──── */
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 32px;
+      background: var(--surface-alt);
+      border-top: 1px solid var(--border-light);
+    }
+
+    .btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px 28px;
+      border-radius: var(--radius-xs);
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(26, 107, 74, 0.25);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 4px 16px rgba(26, 107, 74, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text-secondary);
+      border: 1.5px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-light);
+    }
+
+    .btn-submit {
+      padding: 13px 36px;
+      font-size: 15px;
+    }
+
+    /* ──── SPINNER ──── */
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2.5px solid rgba(255, 255, 255, 0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ──── ERROR BANNER ──── */
+    .error-banner {
+      display: none;
+      background: var(--error-bg);
+      border: 1px solid var(--error-border);
+      color: var(--error);
+      padding: 14px 20px;
+      border-radius: var(--radius-sm);
+      margin: 0 32px 16px;
+      font-size: 13.5px;
+      font-weight: 500;
+      align-items: center;
+      gap: 10px;
+      animation: fadeSlideIn 0.3s ease-out;
+    }
+
+    .error-banner.visible {
+      display: flex;
+    }
+
+    .error-banner svg {
+      flex-shrink: 0;
+    }
+
+    .error-banner .close-btn {
+      margin-left: auto;
+      background: none;
+      border: none;
+      color: var(--error);
+      cursor: pointer;
+      padding: 4px;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    /* ──── SUCCESS SCREEN ──── */
+    .success-screen {
+      display: none;
+      text-align: center;
+      padding: 60px 32px 80px;
+    }
+
+    .success-screen.visible {
+      display: block;
+      animation: fadeSlideIn 0.5s ease-out;
+    }
+
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--success-bg);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .success-icon svg {
+      width: 40px;
+      height: 40px;
+      stroke: var(--success);
+      stroke-width: 2.5;
+      fill: none;
+    }
+
+    .success-screen h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 26px;
+      color: var(--success);
+      margin-bottom: 12px;
+    }
+
+    .success-screen p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      max-width: 440px;
+      margin: 0 auto 8px;
+      line-height: 1.6;
+    }
+
+    .success-screen .vendor-name-tag {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 24px;
+      background: var(--success-bg);
+      border: 1px solid rgba(22, 163, 74, 0.2);
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--success);
+      font-size: 14px;
+    }
+
+    /* ──── FOOTER ──── */
+    .site-footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-muted);
+      font-size: 12px;
+      border-top: 1px solid var(--border-light);
+      background: var(--surface);
+    }
+
+    /* ──── RESPONSIVE ──── */
+    @media (max-width: 640px) {
+      .header-inner {
+        padding: 24px 16px 22px;
+      }
+
+      .company-name {
+        font-size: 20px;
+      }
+
+      .company-contacts {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .form-title-bar h2 {
+        font-size: 15px;
+      }
+
+      .progress-container {
+        padding: 0 16px;
+      }
+
+      .progress-card {
+        padding: 18px 16px 14px;
+      }
+
+      .step-label {
+        font-size: 10px;
+      }
+
+      .step-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+      }
+
+      .progress-steps::before,
+      .progress-fill {
+        top: 15px;
+        left: 24px;
+        right: 24px;
+      }
+
+      .form-wrapper {
+        padding: 0 16px;
+        margin-top: 20px;
+      }
+
+      .step-section {
+        padding: 24px 20px 18px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .form-actions {
+        padding: 16px 20px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+      }
+
+      .error-banner {
+        margin: 0 20px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ──── HEADER ──── -->
+
+  <!-- ──── FORM ──── -->
+  <main class="form-wrapper">
+    <form id="vendorForm" novalidate autocomplete="off">
+      <div class="form-card">
+
+        <!-- ERROR BANNER -->
+        <div class="error-banner" id="errorBanner">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="15" y1="9" x2="9" y2="15" />
+            <line x1="9" y1="9" x2="15" y2="15" />
+          </svg>
+          <span id="errorText">An error occurred.</span>
+          <button type="button" class="close-btn" onclick="hideError()">&times;</button>
+        </div>
+
+        <!-- STEP 1 — VENDOR INFORMATION -->
+        <div class="step-section active" id="step1">
+          <div class="step-header">
+            <h3>Vendor Information</h3>
+            <p>Provide your company's basic registration details.</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="vendorName">Vendor Name <span class="required">*</span></label>
+              <input type="text" id="vendorName" name="vendorName" placeholder="e.g. ABC Pharmaceuticals Pvt Ltd"
+                required>
+              <div class="field-error" id="vendorNameError">Vendor name is required</div>
+            </div>
+            <div class="form-group">
+              <label for="vendorType">Vendor Type <span class="required">*</span></label>
+              <select id="vendorType" name="vendorType" required>
+                <option value="">Select type</option>
+                <option value="MANUFACTURER">Manufacturer</option>
+                <option value="DISTRIBUTOR">Distributor</option>
+                <option value="AGENT">Agent</option>
+                <option value="OTHER">Other</option>
+                <option value="CFT">CFT</option>
+                <option value="C&A">C&A</option>
+              </select>
+              <div class="field-error" id="vendorTypeError">Please select a vendor type</div>
+            </div>
+            <div class="form-group">
+              <label for="vendorComposition">Vendor Composition</label>
+              <select id="vendorComposition" name="vendorComposition">
+                <option value="">Select composition</option>
+                <option value="Company">Company</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Firm">Firm</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group" id="cinGroup">
+              <label for="cin">CIN (if Company)</label>
+              <input type="text" id="cin" name="cin" placeholder="e.g. U24230MH2020PTC123456">
+              <span class="hint-text">Required if vendor is a Company</span>
+            </div>
+            <div class="form-group">
+              <label for="msmeRegNo">MSME Reg No.</label>
+              <input type="text" id="msmeRegNo" name="msmeRegNo" placeholder="e.g. UDYAM-MH-01-0012345">
+              <span class="hint-text">Enclose registration copy when submitting</span>
+            </div>
+            <div class="form-group full-width">
+              <label for="contactAddress">Contact Address <span class="required">*</span></label>
+              <textarea id="contactAddress" name="contactAddress"
+                placeholder="Full registered or correspondence address" required></textarea>
+              <div class="field-error" id="contactAddressError">Contact address is required</div>
+            </div>
+            <div class="form-group">
+              <label for="cityAndState">City & State <span class="required">*</span></label>
+              <input type="text" id="cityAndState" name="cityAndState" placeholder="e.g. Pune, Maharashtra" required>
+              <div class="field-error" id="cityAndStateError">City and state is required</div>
+            </div>
+            <div class="form-group">
+              <label for="emailId">Email ID <span class="required">*</span></label>
+              <input type="email" id="emailId" name="emailId" placeholder="e.g. accounts@vendor.com" required>
+              <span class="hint-text">Payment & PO advice will be sent here</span>
+              <div class="field-error" id="emailIdError">Valid email is required</div>
+            </div>
+            <div class="form-group">
+              <label for="mobileNo">Mobile No <span class="required">*</span></label>
+              <input type="tel" id="mobileNo" name="mobileNo" placeholder="e.g. 9876543210" required>
+              <div class="field-error" id="mobileNoError">Mobile number is required</div>
+            </div>
+            <div class="form-group">
+              <label for="creditPeriodDays">Credit Period (Days)</label>
+              <input type="number" id="creditPeriodDays" name="creditPeriodDays" placeholder="e.g. 30" min="0">
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 — TAX DETAILS -->
+        <div class="step-section" id="step2">
+          <div class="step-header">
+            <h3>Tax Details</h3>
+            <p>Enter your GST, PAN, and relevant license information.</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="gstin">GSTIN</label>
+              <input type="text" id="gstin" name="gstin" placeholder="e.g. 27AABCU9603R1ZM" maxlength="15"
+                style="text-transform: uppercase;">
+              <span class="hint-text">Enclose GST Registration copy. Must be 15 characters if provided.</span>
+              <div class="field-error" id="gstinError">GSTIN must be exactly 15 alphanumeric characters</div>
+            </div>
+            <div class="form-group">
+              <label for="pan">PAN Number <span class="required">*</span></label>
+              <input type="text" id="pan" name="pan" placeholder="e.g. ABCDE1234F" maxlength="10"
+                style="text-transform: uppercase;" required>
+              <span class="hint-text">Format: ABCDE1234F (5 letters, 4 digits, 1 letter)</span>
+              <div class="field-error" id="panError">PAN must match format: ABCDE1234F</div>
+            </div>
+            <div class="form-group">
+              <label for="drugLicenceNo">Drug License No</label>
+              <input type="text" id="drugLicenceNo" name="drugLicenceNo" placeholder="e.g. MH/12345/2024">
+              <span class="hint-text">Required if dealing in Drug or Cosmetics Products</span>
+            </div>
+            <div class="form-group full-width">
+              <label for="foodLicenceNo">Food License No</label>
+              <input type="text" id="foodLicenceNo" name="foodLicenceNo" placeholder="e.g. 11520999000123">
+              <span class="hint-text">Required if registered under FSSAI for Nutraceuticals Products</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3 — BANK DETAILS -->
+        <div class="step-section" id="step3">
+          <div class="step-header">
+            <h3>Bank Account Details</h3>
+            <p>Provide your banking information for payment processing.</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="bankName">Bank Name</label>
+              <input type="text" id="bankName" name="bankName" placeholder="e.g. HDFC Bank">
+            </div>
+            <div class="form-group">
+              <label for="bankAccountNo">Bank Account No</label>
+              <input type="text" id="bankAccountNo" name="bankAccountNo" placeholder="e.g. 50100012345678">
+              <span class="hint-text">Enclose cancelled cheque copy</span>
+            </div>
+            <div class="form-group">
+              <label for="ifscCode">IFSC Code</label>
+              <input type="text" id="ifscCode" name="ifscCode" placeholder="e.g. HDFC0001234" maxlength="11"
+                style="text-transform: uppercase;">
+              <span class="hint-text">Must be exactly 11 characters if provided</span>
+              <div class="field-error" id="ifscCodeError">IFSC Code must be exactly 11 characters</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 4 — POLICIES & DECLARATION -->
+        <div class="step-section" id="step4">
+          <div class="step-header">
+            <h3>Policies & Declaration</h3>
+            <p>Review company policies and complete your declaration.</p>
+          </div>
+
+          <div class="policy-card">
+            <h4>Stock Return Policy</h4>
+            <p>All Claims towards breakage/damage/Expiry/Non Moving Stock will be Settled within 90 days from the date
+              of Invoice/Return Note</p>
+          </div>
+
+          <div class="policy-card">
+            <h4>GST Compliance Policy</h4>
+            <p>In case there is a mismatch of input tax credit, non-payment of GST or non-filing of GST returns by
+              Vendor, due to which Energize is not able to avail input tax credit on the GST paid on the consideration,
+              then Vendor agrees that Energize shall have the right to setoff any such amounts from any amounts that
+              subsequently become due and payable to Vendor from the Vendor for which the input credit on the GST could
+              not be availed by Energize</p>
+          </div>
+
+          <div class="policy-card">
+            <h4>General Terms and Conditions</h4>
+            <ol>
+              <li>Vendor has to comply all statutory compliances and inform to Energize Pharmaceuticals Pvt Ltd in case
+                of any changes/exceptions.</li>
+              <li>Terms of trade should not be shared to any other third party.</li>
+              <li>Any Liability arising out of erroneous details provided by the Vendor is to be borne by the Vendor
+              </li>
+              <li>Vendor registration if done shall be valid for 2 years and thereafter supplier has to renew the same
+              </li>
+            </ol>
+            <p class="note">*While submitting the vendor registration form, ensure to enclose your documents.</p>
+          </div>
+
+          <div class="declaration-box">
+            <h4>Declaration</h4>
+            <p>I hereby declare that the above information is true and correct to the best of my knowledge and belief
+              and I further state that I shall be liable for any action(s) that may be taken by the company in respect
+              of any discrepancies/falsehood in the information given by me.</p>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="declarantName">Name <span class="required">*</span></label>
+              <input type="text" id="declarantName" name="declarantName" placeholder="Full name of signatory" required>
+              <div class="field-error" id="declarantNameError">Name is required</div>
+            </div>
+            <div class="form-group">
+              <label for="designation">Designation <span class="required">*</span></label>
+              <input type="text" id="designation" name="designation" placeholder="e.g. Managing Director" required>
+              <div class="field-error" id="designationError">Designation is required</div>
+            </div>
+            <div class="form-group">
+              <label for="declarationDate">Date <span class="required">*</span></label>
+              <input type="date" id="declarationDate" name="declarationDate" required>
+              <div class="field-error" id="declarationDateError">Date is required</div>
+            </div>
+          </div>
+
+          <div class="checkbox-group" id="agreeGroup">
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox">I have read and agree to the above terms, policies, and declaration. I confirm
+              all information provided is accurate.</label>
+          </div>
+          <div class="field-error" id="agreeError" style="margin-top:6px;">You must agree to the terms before submitting
+          </div>
+        </div>
+
+        <!-- SUCCESS SCREEN -->
+        <div class="success-screen" id="successScreen">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3>Vendor Registration Submitted Successfully!</h3>
+          <p>Our accounts team will review your registration and get back to you shortly.</p>
+          <div class="vendor-name-tag" id="successVendorName"></div>
+        </div>
+
+        <!-- FORM ACTIONS -->
+        <div class="form-actions" id="formActions">
+          <button type="button" class="btn btn-secondary" id="prevBtn" style="visibility: hidden;"
+            onclick="changeStep(-1)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary" id="nextBtn" onclick="changeStep(1)">
+            Next
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+          <button type="button" class="btn btn-primary btn-submit" id="submitBtn" style="display: none;"
+            onclick="submitForm()">
+            <span id="submitText">Submit Registration</span>
+            <div class="spinner" id="submitSpinner"></div>
+          </button>
+        </div>
+
+      </div>
+    </form>
+  </main>
+
+  <!-- ──── FOOTER ──── -->
+  <footer class="site-footer">
+    &copy; 2025 Energize Pharmaceuticals (P) Limited. All rights reserved.
+  </footer>
+
+  <script>
+    /* ════════════════════════════════════════════
+       CONFIG — Change this to your Render backend URL
+    ════════════════════════════════════════════ */
+    const API_BASE_URL = 'https://your-app-name.onrender.com';
+
+    /* ════════════════════════════════════════════
+       STATE
+    ════════════════════════════════════════════ */
+    let currentStep = 1;
+    const totalSteps = 4;
+
+    /* ════════════════════════════════════════════
+       INIT
+    ════════════════════════════════════════════ */
+    document.addEventListener('DOMContentLoaded', () => {
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('declarationDate').value = today;
+
+      document.getElementById('vendorComposition').addEventListener('change', toggleCINField);
+      toggleCINField();
+
+      document.getElementById('gstin').addEventListener('input', function () {
+        this.value = this.value.toUpperCase();
+      });
+      document.getElementById('pan').addEventListener('input', function () {
+        this.value = this.value.toUpperCase();
+      });
+      document.getElementById('ifscCode').addEventListener('input', function () {
+        this.value = this.value.toUpperCase();
+      });
+
+      document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(el => {
+        el.addEventListener('input', () => {
+          el.classList.remove('error');
+          const errorEl = document.getElementById(el.id + 'Error');
+          if (errorEl) errorEl.classList.remove('visible');
+        });
+      });
+
+      document.getElementById('agreeCheckbox').addEventListener('change', () => {
+        document.getElementById('agreeGroup').classList.remove('error');
+        document.getElementById('agreeError').classList.remove('visible');
+      });
+    });
+
+    /* ════════════════════════════════════════════
+       CIN TOGGLE
+    ════════════════════════════════════════════ */
+    function toggleCINField() {
+      const comp = document.getElementById('vendorComposition').value;
+      const cinGroup = document.getElementById('cinGroup');
+      if (comp === 'Company') {
+        cinGroup.style.display = 'flex';
+      } else {
+        cinGroup.style.display = 'none';
+        document.getElementById('cin').value = '';
+      }
+    }
+
+    /* ════════════════════════════════════════════
+       STEP NAVIGATION
+    ════════════════════════════════════════════ */
+    function changeStep(direction) {
+      if (direction === 1 && !validateCurrentStep()) return;
+
+      const nextStep = currentStep + direction;
+      if (nextStep < 1 || nextStep > totalSteps) return;
+
+      document.getElementById('step' + currentStep).classList.remove('active');
+      currentStep = nextStep;
+      document.getElementById('step' + currentStep).classList.add('active');
+
+      updateProgress();
+      updateButtons();
+      hideError();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function updateProgress() {
+      const indicators = document.querySelectorAll('.step-indicator');
+      indicators.forEach((ind, i) => {
+        const stepNum = i + 1;
+        ind.classList.remove('active', 'completed');
+        if (stepNum === currentStep) ind.classList.add('active');
+        else if (stepNum < currentStep) ind.classList.add('completed');
+
+        const circle = ind.querySelector('.step-circle');
+        if (stepNum < currentStep) {
+          circle.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+        } else {
+          circle.textContent = stepNum;
+        }
+      });
+
+      const fillPct = ((currentStep - 1) / (totalSteps - 1)) * 100;
+      const barWidth = document.querySelector('.progress-steps').offsetWidth - 72;
+      document.getElementById('progressFill').style.width = (fillPct / 100 * barWidth) + 'px';
+    }
+
+    function updateButtons() {
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const submitBtn = document.getElementById('submitBtn');
+
+      prevBtn.style.visibility = currentStep === 1 ? 'hidden' : 'visible';
+
+      if (currentStep === totalSteps) {
+        nextBtn.style.display = 'none';
+        submitBtn.style.display = 'inline-flex';
+      } else {
+        nextBtn.style.display = 'inline-flex';
+        submitBtn.style.display = 'none';
+      }
+    }
+
+    /* ════════════════════════════════════════════
+       VALIDATION
+    ════════════════════════════════════════════ */
+    function showFieldError(id, msg) {
+      const el = document.getElementById(id);
+      const errEl = document.getElementById(id + 'Error');
+      if (el) el.classList.add('error');
+      if (errEl) {
+        if (msg) errEl.textContent = msg;
+        errEl.classList.add('visible');
+      }
+    }
+
+    function validateCurrentStep() {
+      let valid = true;
+
+      if (currentStep === 1) {
+        const requiredStep1 = ['vendorName', 'vendorType', 'contactAddress', 'cityAndState', 'emailId', 'mobileNo'];
+        requiredStep1.forEach(id => {
+          const el = document.getElementById(id);
+          if (!el.value.trim()) {
+            showFieldError(id);
+            valid = false;
+          }
+        });
+        const email = document.getElementById('emailId').value.trim();
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          showFieldError('emailId', 'Please enter a valid email address');
+          valid = false;
+        }
+      }
+
+      if (currentStep === 2) {
+        const gstin = document.getElementById('gstin').value.trim();
+        if (gstin && gstin.length !== 15) {
+          showFieldError('gstin', 'GSTIN must be exactly 15 alphanumeric characters');
+          valid = false;
+        }
+        if (gstin && !/^[A-Z0-9]{15}$/.test(gstin)) {
+          showFieldError('gstin', 'GSTIN must be 15 alphanumeric characters');
+          valid = false;
+        }
+
+        const pan = document.getElementById('pan').value.trim();
+        if (!pan) {
+          showFieldError('pan', 'PAN number is required');
+          valid = false;
+        } else if (!/^[A-Z]{5}[0-9]{4}[A-Z]$/.test(pan)) {
+          showFieldError('pan', 'PAN must match format: ABCDE1234F');
+          valid = false;
+        }
+      }
+
+      if (currentStep === 3) {
+        const ifsc = document.getElementById('ifscCode').value.trim();
+        if (ifsc && ifsc.length !== 11) {
+          showFieldError('ifscCode', 'IFSC Code must be exactly 11 characters');
+          valid = false;
+        }
+      }
+
+      if (currentStep === 4) {
+        const requiredStep4 = ['declarantName', 'designation', 'declarationDate'];
+        requiredStep4.forEach(id => {
+          const el = document.getElementById(id);
+          if (!el.value.trim()) {
+            showFieldError(id);
+            valid = false;
+          }
+        });
+        if (!document.getElementById('agreeCheckbox').checked) {
+          document.getElementById('agreeGroup').classList.add('error');
+          document.getElementById('agreeError').classList.add('visible');
+          valid = false;
+        }
+      }
+
+      return valid;
+    }
+
+    /* ════════════════════════════════════════════
+       ERROR BANNER
+    ════════════════════════════════════════════ */
+    function showError(msg) {
+      document.getElementById('errorText').textContent = msg;
+      document.getElementById('errorBanner').classList.add('visible');
+    }
+
+    function hideError() {
+      document.getElementById('errorBanner').classList.remove('visible');
+    }
+
+    /* ════════════════════════════════════════════
+       SUBMIT
+    ════════════════════════════════════════════ */
+    async function submitForm() {
+      if (!validateCurrentStep()) return;
+
+      const submitBtn = document.getElementById('submitBtn');
+      const submitText = document.getElementById('submitText');
+      const spinner = document.getElementById('submitSpinner');
+
+      submitBtn.disabled = true;
+      submitText.textContent = 'Submitting...';
+      spinner.style.display = 'inline-block';
+      hideError();
+
+      const formData = {
+        vendorName: document.getElementById('vendorName').value.trim(),
+        vendorType: document.getElementById('vendorType').value,
+        vendorComposition: document.getElementById('vendorComposition').value,
+        cin: document.getElementById('cin').value.trim(),
+        msmeRegNo: document.getElementById('msmeRegNo').value.trim(),
+        contactAddress: document.getElementById('contactAddress').value.trim(),
+        cityAndState: document.getElementById('cityAndState').value.trim(),
+        emailId: document.getElementById('emailId').value.trim(),
+        mobileNo: document.getElementById('mobileNo').value.trim(),
+        creditPeriodDays: document.getElementById('creditPeriodDays').value.trim(),
+        gstin: document.getElementById('gstin').value.trim().toUpperCase(),
+        pan: document.getElementById('pan').value.trim().toUpperCase(),
+        drugLicenceNo: document.getElementById('drugLicenceNo').value.trim(),
+        foodLicenceNo: document.getElementById('foodLicenceNo').value.trim(),
+        bankName: document.getElementById('bankName').value.trim(),
+        bankAccountNo: document.getElementById('bankAccountNo').value.trim(),
+        ifscCode: document.getElementById('ifscCode').value.trim().toUpperCase(),
+        declarantName: document.getElementById('declarantName').value.trim(),
+        designation: document.getElementById('designation').value.trim(),
+        declarationDate: document.getElementById('declarationDate').value
+      };
+
+      try {
+        const res = await fetch(API_BASE_URL + '/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        const result = await res.json();
+
+        if (result.success) {
+          document.getElementById('step' + currentStep).classList.remove('active');
+          document.getElementById('formActions').style.display = 'none';
+          document.getElementById('successVendorName').textContent = formData.vendorName;
+          document.getElementById('successScreen').classList.add('visible');
+
+          const indicators = document.querySelectorAll('.step-indicator');
+          indicators.forEach(ind => {
+            ind.classList.remove('active');
+            ind.classList.add('completed');
+            ind.querySelector('.step-circle').innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+          });
+          document.getElementById('progressFill').style.width = '100%';
+        } else {
+          showError(result.error || 'Submission failed. Please try again.');
+          submitBtn.disabled = false;
+          submitText.textContent = 'Submit Registration';
+          spinner.style.display = 'none';
+        }
+      } catch (err) {
+        showError('Network error. Please check your connection and try again.');
+        submitBtn.disabled = false;
+        submitText.textContent = 'Submit Registration';
+        spinner.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>
