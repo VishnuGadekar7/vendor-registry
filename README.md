@@ -1,13 +1,13 @@
 # Energize Vendor Registration Form
 
-A complete vendor registration system for **Energize Pharmaceuticals (P) Limited**. Vendors fill out a multi-step online form, which saves data to MongoDB, generates a filled PDF matching the original Energize registration form template, and emails the PDF to the accounts team via Resend.
+A complete vendor registration system for **Energize Pharmaceuticals (P) Limited**. Vendors fill out a multi-step online form, which generates a filled PDF matching the original Energize registration form template and emails the PDF to the accounts team via Resend.
 
 ## Features
 
 - Multi-step form with progress tracking and field validation
 - PDF generation replicating the official Energize Vendor Registration Form layout
 - Automated email with summary + PDF attachment via Resend
-- MongoDB storage for all submissions
+- Email delivery of all submissions with PDF attachments
 - Mobile-responsive design
 - Production-ready for Render.com free tier
 
@@ -19,7 +19,6 @@ A complete vendor registration system for **Energize Pharmaceuticals (P) Limited
 | Framework     | Express.js              |
 | PDF           | Puppeteer               |
 | Email         | Resend                  |
-| Database      | MongoDB + Mongoose      |
 | Frontend      | Vanilla HTML / CSS / JS |
 
 ## Project Structure
@@ -29,8 +28,6 @@ energize-vendor-form/
 ├── server.js          # Express server & /submit route
 ├── generatePDF.js     # Puppeteer PDF generator
 ├── emailSender.js     # Resend email sender
-├── db.js              # MongoDB connection
-├── Vendor.js          # Mongoose schema/model
 ├── public/
 │   └── index.html     # Multi-step registration form
 ├── .env.example       # Environment variable template
@@ -65,7 +62,6 @@ The form will be available at `http://localhost:3000`.
 | Variable                     | Description                                              | Example                                       |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------------|
 | `PORT`                      | Server port                                               | `3000`                                        |
-| `MONGODB_URI`               | MongoDB Atlas connection string                           | `mongodb+srv://user:pass@cluster/energize`   |
 | `RESEND_API_KEY`            | API key from resend.com dashboard                         | `re_xxxxxxxxxxxxxxxxxxxxxxxx`                |
 | `HR_EMAIL`                  | Recipient email for vendor registrations                  | `accounts@energizepharma.com`                |
 | `IS_PRODUCTION`             | Set to `true` on Render to use `puppeteer-core`           | `false` locally, `true` on Render            |
@@ -81,14 +77,6 @@ The form will be available at `http://localhost:3000`.
 > - Upgrade your Resend plan, **or**
 > - Verify your own domain (see Custom Domain section below)
 
-## MongoDB Atlas Setup
-
-1. Go to [cloud.mongodb.com](https://cloud.mongodb.com) and create a free cluster
-2. Create a database user with a password
-3. Whitelist your IP (or `0.0.0.0/0` for development)
-4. Click **Connect → Connect your application** and copy the connection string
-5. Paste it in `.env` as `MONGODB_URI` (replace `<password>` with your actual password)
-
 ## Render.com Deployment
 
 1. Push your code to a GitHub repository
@@ -99,7 +87,6 @@ The form will be available at `http://localhost:3000`.
    - **Start Command:** `node server.js`
 5. Add all environment variables in the Render dashboard:
    - `PORT` → leave empty (Render sets this automatically)
-   - `MONGODB_URI` → your Atlas connection string
    - `RESEND_API_KEY` → your Resend API key
    - `HR_EMAIL` → recipient email
    - `IS_PRODUCTION` → `true`

@@ -8,8 +8,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: MONGODB_URI
-        sync: false
       - key: RESEND_API_KEY
         sync: false
       - key: HR_EMAIL

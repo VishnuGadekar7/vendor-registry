@@ -3,8 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const connectDB = require('./db');
-const Vendor = require('./Vendor');
 const generatePDF = require('./generatePDF');
 const sendEmail = require('./emailSender');
 
@@ -31,16 +29,10 @@ app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true, limit: '5mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-connectDB();
-
 app.post('/submit', async (req, res) => {
   try {
     const formData = req.body;
     console.log('📥 Form received:', formData.vendorName);
-
-    const vendor = new Vendor(formData);
-    await vendor.save();
-    console.log('💾 Saved to DB:', vendor._id);
 
     const pdfBuffer = await generatePDF(formData);
     console.log('📄 PDF generated');
