@@ -21,8 +21,8 @@ try {
 }
 
 try {
-  // Execute the browser install command, piping output to the console so we can see it in Render logs
-  execSync('npx puppeteer browsers install chrome', { stdio: 'inherit' });
+  // Directly run the Puppeteer install script (npx can be buggy during postinstall before binaries are linked)
+  execSync('node node_modules/puppeteer/install.mjs', { stdio: 'inherit' });
   console.log('✅ Chrome downloaded successfully!');
 } catch (error) {
   console.error('❌ Failed to download Chrome:', error.message);
