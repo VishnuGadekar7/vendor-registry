@@ -8,6 +8,8 @@ console.log('=========================================');
 // Puppeteer treats ANY string value (even "false") as truthy, so we MUST completely delete it!
 delete process.env.PUPPETEER_SKIP_CHROMIUM_DOWNLOAD;
 delete process.env.PUPPETEER_SKIP_DOWNLOAD;
+delete process.env.npm_config_puppeteer_skip_chromium_download;
+delete process.env.npm_config_puppeteer_skip_download;
 
 const fs = require('fs');
 const path = require('path');
