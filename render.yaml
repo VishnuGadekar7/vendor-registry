@@ -12,5 +12,3 @@ services:
         sync: false
       - key: HR_EMAIL
         sync: false
-      - key: PUPPETEER_CACHE_DIR
-        value: /opt/render/.cache/puppeteer
