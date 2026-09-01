@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "npm install",
-    "postinstall": "node install-browser.js"
+    "build": "npm install"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -1,12 +1,14 @@
-// FORCE REMOVE THE BAD ENVIRONMENT VARIABLE before requiring Puppeteer!
-// Puppeteer caches environment variables on module load, so this must be at the very top.
-delete process.env.PUPPETEER_EXECUTABLE_PATH;
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
 
 async function generatePDF(data) {
   let browser = null;
   try {
+    const executablePath =
+      process.env.PUPPETEER_EXECUTABLE_PATH ||
+      '/usr/bin/google-chrome-stable';
+
     const launchOptions = {
+      executablePath,
       headless: 'new',
       args: [
         '--no-sandbox',
@@ -17,7 +19,7 @@ async function generatePDF(data) {
         '--no-zygote',
         '--single-process'
       ],
-      timeout: 60000 
+      timeout: 60000
     };
 
     browser = await puppeteer.launch(launchOptions);
