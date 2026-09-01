@@ -5,7 +5,9 @@ console.log('🚀 FORCING PUPPETEER TO DOWNLOAD CHROME...');
 console.log('=========================================');
 
 // Forcefully override any broken environment variables from the Render dashboard
-process.env.PUPPETEER_SKIP_CHROMIUM_DOWNLOAD = 'false';
+// Puppeteer treats ANY string value (even "false") as truthy, so we MUST completely delete it!
+delete process.env.PUPPETEER_SKIP_CHROMIUM_DOWNLOAD;
+delete process.env.PUPPETEER_SKIP_DOWNLOAD;
 
 const fs = require('fs');
 const path = require('path');
