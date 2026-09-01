@@ -3,6 +3,11 @@ const puppeteer = require('puppeteer');
 async function generatePDF(data) {
   let browser = null;
   try {
+    // FORCE REMOVE THE BAD ENVIRONMENT VARIABLE
+    // If this exists in Render dashboard, Puppeteer will secretly read it and fail. 
+    // This deletes it from the current Node process before Puppeteer can see it.
+    delete process.env.PUPPETEER_EXECUTABLE_PATH;
+
     const launchOptions = {
       headless: 'new',
       args: [
