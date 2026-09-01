@@ -19,8 +19,12 @@ async function generatePDF(data) {
       ]
     };
 
-    if (process.env.PUPPETEER_EXECUTABLE_PATH) {
-      launchOptions.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+    // Force Puppeteer to use the Chrome it downloaded during the build step
+    // This ignores any incorrect environment variables like /usr/bin/google-chrome-stable
+    try {
+      launchOptions.executablePath = puppeteer.executablePath();
+    } catch (e) {
+      console.warn('Could not find Puppeteer executablePath. Falling back to default.', e.message);
     }
 
     browser = await puppeteer.launch(launchOptions);
