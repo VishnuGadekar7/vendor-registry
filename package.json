@@ -15,7 +15,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "puppeteer": "^23.11.1",
+    "puppeteer": "^24.39.1",
+    "puppeteer-core": "^24.4.0",
     "resend": "^4.1.2"
   },
   "keywords": [
