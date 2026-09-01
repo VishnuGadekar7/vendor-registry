@@ -1168,8 +1168,12 @@
       });
 
       const fillPct = ((currentStep - 1) / (totalSteps - 1)) * 100;
-      const barWidth = document.querySelector('.progress-steps').offsetWidth - 72;
-      document.getElementById('progressFill').style.width = (fillPct / 100 * barWidth) + 'px';
+      const progressSteps = document.querySelector('.progress-steps');
+      const progressFill = document.getElementById('progressFill');
+      if (progressSteps && progressFill) {
+        const barWidth = progressSteps.offsetWidth - 72;
+        progressFill.style.width = (fillPct / 100 * barWidth) + 'px';
+      }
     }
 
     function updateButtons() {
@@ -1339,7 +1343,8 @@
             ind.classList.add('completed');
             ind.querySelector('.step-circle').innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
           });
-          document.getElementById('progressFill').style.width = '100%';
+          const progressFill = document.getElementById('progressFill');
+          if (progressFill) progressFill.style.width = '100%';
         } else {
           showError(result.error || 'Submission failed. Please try again.');
           submitBtn.disabled = false;
