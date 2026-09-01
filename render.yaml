@@ -12,7 +12,5 @@ services:
         sync: false
       - key: HR_EMAIL
         sync: false
-      - key: PUPPETEER_EXECUTABLE_PATH
-        value: /usr/bin/google-chrome-stable
       - key: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
         value: "true"

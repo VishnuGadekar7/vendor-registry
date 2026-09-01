@@ -1,24 +1,17 @@
 const puppeteer = require('puppeteer-core');
+const chromium = require('@sparticuz/chromium');
 
 async function generatePDF(data) {
   let browser = null;
   try {
     const executablePath =
       process.env.PUPPETEER_EXECUTABLE_PATH ||
-      '/usr/bin/google-chrome-stable';
+      (await chromium.executablePath());
 
     const launchOptions = {
       executablePath,
-      headless: 'new',
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-gpu',
-        '--no-first-run',
-        '--no-zygote',
-        '--single-process'
-      ],
+      headless: chromium.headless,
+      args: chromium.args,
       timeout: 60000
     };
 
