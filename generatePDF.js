@@ -10,22 +10,12 @@ async function generatePDF(data) {
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage',
         '--disable-gpu',
-        '--single-process',
-        '--disable-extensions',
-        '--disable-background-networking',
-        '--disable-default-apps',
-        '--disable-translate',
-        '--no-first-run'
-      ]
+        '--no-first-run',
+        '--no-zygote',
+        '--single-process'
+      ],
+      timeout: 60000 
     };
-
-    // Force Puppeteer to use the Chrome it downloaded during the build step
-    // This ignores any incorrect environment variables like /usr/bin/google-chrome-stable
-    try {
-      launchOptions.executablePath = puppeteer.executablePath();
-    } catch (e) {
-      console.warn('Could not find Puppeteer executablePath. Falling back to default.', e.message);
-    }
 
     browser = await puppeteer.launch(launchOptions);
     const page = await browser.newPage();
